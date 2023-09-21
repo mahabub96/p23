@@ -1,0 +1,56 @@
+span{
+    color: red;
+}
+div p:nth-last-of-type(2){
+    background-color: green;
+}
+div p:nth-of-type(3n-1){
+    background-color: green;
+}
+div p:only-of-type{
+    background-color: yellow;
+}
+div p:only-child{
+    background-color: blue;
+}
+input:optional{
+    background-color: green;
+}
+input:required{
+    background-color: red;
+}
+input:readonly{
+    background-color: blue;
+}
+:target{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+}
+.main div{
+    display: none;
+}
+.main div:target{
+    display: block;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 10px;
+}
+p::first-letter{
+    font-size: 30px;
+    color: green;
+}
+p::first-line{
+    color: brown;
+}
+span::first-line{
+    color: red;
+}
+h1::before{
+    content: "I am  Before ";
+    color: blue;
+}
+h1::after{
+    content: " Its after";
+    color: green;
+}
